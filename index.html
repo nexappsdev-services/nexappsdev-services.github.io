@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NexApps</title>
+<meta name="description" content="NexApps builds simple, privacy-friendly apps. 跑拍 Jogbeat: a super slow jogging metronome for iPhone and Apple Watch.">
+<link rel="icon" href="jogbeat-icon.png">
+<style>
+:root{color-scheme:light dark;--bg:#FFFFFF;--card:#FFFFFF;--text:#14284B;--muted:#4B5B78;--line:#E3E8F0;--tint:#FFF4EC;--wash:#F2F6FA;--link:#B84A08;--btn:#E8601C;--btn-text:#FFFFFF}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1623;--card:#172033;--text:#EEF2F8;--muted:#AAB7CC;--line:#2A3650;--tint:#2B2118;--wash:#131C2E;--link:#FF9F4A;--btn:#FF9F4A;--btn-text:#1F1205}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--text);font:17px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","PingFang SC","Hiragino Sans","Noto Sans CJK TC",sans-serif}
+a{color:var(--link);text-underline-offset:.15em}
+:focus-visible{outline:3px solid var(--link);outline-offset:2px;border-radius:4px}
+.wrap{width:100%;max-width:960px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;min-height:68px;font-weight:800;font-size:22px;letter-spacing:-.01em}
+.brand::before{content:"";width:.6em;height:.6em;margin-right:.55em;border-radius:50%;background:var(--btn)}
+main{flex:1;padding:48px 0 56px}
+h1{font-size:clamp(34px,6vw,56px);line-height:1.2;font-weight:800;letter-spacing:-.01em;margin:0 0 14px;text-wrap:balance}
+.lead{font-size:19px;color:var(--muted);margin:0 0 40px;max-width:32em;text-wrap:balance}
+h2{font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.app{display:flex;align-items:center;gap:18px;padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--card);color:inherit;text-decoration:none}
+.app:hover{border-color:var(--btn)}
+.app img{flex:none;width:72px;height:72px;border-radius:16px}
+.app h3{margin:0;font-size:21px;line-height:1.3}
+.app p{margin:2px 0 0;font-size:15px;line-height:1.5;color:var(--muted)}
+.app .go{display:inline-block;margin-top:8px;font-size:15px;font-weight:700;color:var(--link)}
+.contact{margin-top:48px;padding:18px 20px;border-radius:14px;background:var(--tint)}
+.contact h2{margin-bottom:4px}.contact p{margin:0}
+footer{color:var(--muted);font-size:14px;padding:0 0 32px}
+footer .wrap{border-top:1px solid var(--line);padding-top:20px}
+@media (max-width:420px){.app{align-items:flex-start;padding:16px}.app img{width:60px;height:60px;border-radius:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="brand">NexApps</div></div></header>
+<main>
+<div class="wrap">
+<h1>Simple apps, built with care.</h1>
+<p class="lead">NexApps makes small, privacy-friendly apps for iPhone and Apple Watch.</p>
+<h2>Apps</h2>
+<div class="apps">
+<a class="app" href="/JogBeat-Site/">
+<img src="jogbeat-icon.png" alt="" width="72" height="72">
+<div><h3>跑拍 Jogbeat</h3><p>A super slow jogging metronome for iPhone and Apple Watch. <span style="white-space:nowrap">超慢跑節拍器。</span></p><span class="go">Learn more →</span></div>
+</a>
+</div>
+<div class="contact">
+<h2>Contact</h2>
+<p><a href="mailto:nexapps.dev@gmail.com">nexapps.dev@gmail.com</a></p>
+</div>
+</div>
+</main>
+<footer><div class="wrap">© NexApps</div></footer>
+</body>
+</html>
